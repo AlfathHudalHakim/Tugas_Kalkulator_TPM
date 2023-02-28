@@ -22,7 +22,6 @@ class Kalkulator extends StatelessWidget{
       appBar: AppBar(
         title: Text("Kalkulator"),
       ),
-
       body: SafeArea(
         child: Column(
           children: [
@@ -31,7 +30,6 @@ class Kalkulator extends StatelessWidget{
               child: Image.asset("assets/image/logo.png",
                   height: 200,
                   width: 200),
-
             ),
             SizedBox(height: 60),
            TextFormField(
@@ -56,7 +54,6 @@ class Kalkulator extends StatelessWidget{
                 ),
               ),
             ),
-
             ElevatedButton(
                 onPressed: () {
                   String email = 'alfath@gmail.com';
@@ -65,10 +62,8 @@ class Kalkulator extends StatelessWidget{
                     Route route = MaterialPageRoute(builder: (context) => AfterLogin());
                     Navigator.push(context, route);
                   }
-
             }
                 , child: Text("Login"))
-
           ],
         ),
       ),

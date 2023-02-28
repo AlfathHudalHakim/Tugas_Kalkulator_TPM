@@ -17,6 +17,9 @@ class Daftar extends StatelessWidget{
             ),
             Center(
                 child: Text("1. Alfath Hudal Hakim")
+            ),
+            Center(
+                child: Text("2. Fridolin Barudo Ristrian Aji")
             )
 
           ],
