@@ -25,7 +25,7 @@ class _OpState extends State<Op> {
     Widget build(BuildContext context) {
     return Scaffold(
     appBar: AppBar(
-    title: Text('Profil kelompok'),
+    title: Text('Kalkulator'),
     ),
     body: SafeArea(
     child: Column(
@@ -80,9 +80,6 @@ class _OpState extends State<Op> {
                 onPressed: kurang
                 , child: Text(" - ")),
           ),
-
-
-
         ],
       ),
       SizedBox(height: 50),
