@@ -62,6 +62,15 @@ class Kalkulator extends StatelessWidget{
                     Route route = MaterialPageRoute(builder: (context) => AfterLogin());
                     Navigator.push(context, route);
                   }
+                  else{
+                    final snackBar = SnackBar(
+                      duration: const Duration(seconds: 5),
+                      content: Text("Email dan password salah!"),
+                      backgroundColor: Colors.red,
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    return;
+                  }
             }
                 , child: Text("Login"))
           ],
